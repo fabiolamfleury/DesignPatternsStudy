@@ -17,11 +17,13 @@ public abstract class Factory {
 				carFactory = new CarFactory();
 			}
 			factory = carFactory;
+			break;
 		case TRUCK:
 			if (truckFactory == null) {
 				truckFactory = new TruckFactory();
 			}
 			factory = truckFactory;
+			break;
 		default:
 			throw new IllegalArgumentException();
 		}
